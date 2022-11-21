@@ -1,21 +1,21 @@
-'use strict';
-exercise 1
-console.log("I am printing to console")
+//Ex.4
 
-exercise 2
-let userName = prompt("Enter name");
-document.write("Hello " + userName);
+let name = prompt("Welcome to Hogwarts School of Witchcraft. " +
+    "Give me your name and I will assign you in one of our 4 class.");
 
-exercise 3
-let a = parseInt(prompt("Enter first number:"));
-let b = parseInt(prompt("Enter second number:"));
-let c = parseInt(prompt("Enter third number:"));
+room = Math.floor((Math.random() * 4) + 1);
 
-let  sum = a + b + c;
-document.write('This sum is: ' + sum, "<br>");
+if (room === 1) {
+  document.write("Congratulations " + name + "! " + " Your class is Gryffindor.");
+}
+else if (room === 2) {
+  document.write("Congratulations " + name + "! " + " Your class is Slytherin.");
+}
 
-let product = a * b * c;
-document.write('This product is: ' + product, "<br>");
+else if (room === 3) {
+  document.write("Congratulations " + name + "! " + " Your class is Hufflepuff.");
+}
 
-let average = (a + b + c) / 3;
-document.write('The average is: ' + average);
+else {
+  document.write("Congratulations " + name + "! " + " Your class is Ravenclaw.");
+}
